@@ -160,6 +160,7 @@ public class SkewHeap<P extends Comparable<P>, V> implements PriorityQueue<P, V>
 
     // THE ONLY ASSIGNMENT FOR item FIELD!!!
     // ALWAYS UPDATING NODE! (for item.decreaseKey to always call its owner!!)
+    // TODO: sketchy, make it better!
     private HeapItem<P, V> setItem(HeapItem<P, V> item) {
         this.item = item;
         item.setDecreaseKeyFunction(this::decreaseKey);
