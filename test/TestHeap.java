@@ -1,8 +1,6 @@
 import opgave.PriorityQueue;
 import opgave.QueueItem;
-import oplossing.HeapItem;
-import oplossing.MyPriorityQueue;
-import oplossing.MyPriorityQueueOld;
+import oplossing.PairingHeap;
 import oplossing.SkewHeap;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -20,7 +18,7 @@ public class TestHeap {
     private final Random RG = new Random(69);
 
     private final Supplier<PriorityQueue<Integer, String>> factory = SkewHeap::new;
-//    private final Supplier<PriorityQueue<Integer, String>> factory = MyPriorityQueue::new;
+//    private final Supplier<PriorityQueue<Integer, String>> factory = PairingHeap::new;
 //    private final Supplier<PriorityQueue<Integer, String>> factory = MyPriorityQueueOld::new;
 
     @Test

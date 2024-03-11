@@ -5,6 +5,11 @@ import opgave.PriorityQueue;
 import java.util.Objects;
 import java.util.Stack;
 
+
+/**
+ * Skew heap implementation
+ * <a href="https://en.wikipedia.org/wiki/Skew_heap">Source</a>
+ */
 public class SkewHeap<P extends Comparable<P>, V> implements PriorityQueue<P, V> {
 
     /**

@@ -5,7 +5,11 @@ import opgave.QueueItem;
 
 import java.util.Stack;
 
-public class MyPriorityQueue<P extends Comparable<P>, V> implements PriorityQueue<P, V> {
+/**
+ * Pairing heap implementation
+ * <a href="https://en.wikipedia.org/wiki/Pairing_heap">Source</a>
+ */
+public class PairingHeap<P extends Comparable<P>, V> implements PriorityQueue<P, V> {
 
     /**
      * Use Iterative <> Cached size
@@ -16,7 +20,7 @@ public class MyPriorityQueue<P extends Comparable<P>, V> implements PriorityQueu
     private PairingHeapNode root;
     private int size = 0; // Cached heap size
 
-    public MyPriorityQueue() {
+    public PairingHeap() {
     }
 
     @Override

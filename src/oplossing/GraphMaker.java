@@ -19,7 +19,7 @@ public class GraphMaker {
             for (Node to : nodes) {
                 if (from.equals(to))
                     continue;
-                // Het gewicht is altijd minstens de euclidische afstand tussen de toppen
+                // The weight is always at least the Euclidean distance between the tops
                 var dist = distance(from, to);
                 edges.add(new DirectedEdge(from, to, RG.nextInt((int) dist, (int) (dist * 2))));
             }
@@ -40,7 +40,7 @@ public class GraphMaker {
                     to = null;
                 }
             }
-            // Het gewicht is altijd minstens de euclidische afstand tussen de toppen
+            // The weight is always at least the Euclidean distance between the tops
             var dist = distance(from, to);
             edges.add(new DirectedEdge(from, to, RG.nextInt((int) dist, (int) (dist * 2))));
         }
@@ -77,7 +77,9 @@ public class GraphMaker {
 
                 visited.add(current);
                 // Add all neighbors to stack to add them later to sub-graph
-                List<Node> neighbors = neighborsLists.get(current).stream().map(DirectedEdge::to).toList();
+                List<Node> neighbors = neighborsLists.get(current) != null ?
+                        neighborsLists.get(current).stream().map(DirectedEdge::to).toList()
+                        : List.of();
                 if (neighbors.isEmpty())
                     leaves.add(current);
                 else

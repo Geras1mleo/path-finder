@@ -9,16 +9,20 @@ import java.util.Stack;
 
 /*
 * Additionally, Iacono [7] has shown that insertions
-require only constant amortized time; significant for those applications that entail many
-more insertions than deletions.
+* require only constant amortized time; significant for those applications that entail many
+* more insertions than deletions.
 * */
 
-public class MyPriorityQueueOld<P extends Comparable<P>, V> implements PriorityQueue<P, V> {
+
+/**
+ * This implementation is described in the report of project
+ */
+public class PairingHeapOld<P extends Comparable<P>, V> implements PriorityQueue<P, V> {
 
     private PairingHeapNode root;
     private int size = 0; // Cached heap size
 
-    public MyPriorityQueueOld() {
+    public PairingHeapOld() {
     }
 
     @Override

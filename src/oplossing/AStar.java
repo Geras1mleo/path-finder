@@ -8,10 +8,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * A* algorithm for MyShortestPath
+ * A* algorithm implementation
  * <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">Source</a>
  */
-public class MyShortestPath implements RoutePlanner {
+public class AStar implements RoutePlanner {
     private PriorityQueueFactory queueFactory;
     private HashMap<Node, ArrayList<DirectedEdge>> neighbors;
 

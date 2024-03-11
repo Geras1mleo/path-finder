@@ -1,6 +1,6 @@
 import opgave.DirectedEdge;
 import opgave.Node;
-import oplossing.MyShortestPath;
+import oplossing.AStar;
 import oplossing.SkewHeap;
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +13,8 @@ import static oplossing.GraphMaker.*;
 public class TestShortestPath {
     private final Random RG = new Random(69);    
 
-    private static MyShortestPath getMyShortestPath() {
-        var msp = new MyShortestPath();
+    private static AStar getMyShortestPath() {
+        var msp = new AStar();
         msp.setPriorityQueueFactory(SkewHeap::new);
         return msp;
     }
