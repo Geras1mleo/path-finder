@@ -48,11 +48,3 @@ public class SkewHeapBenchmarksAddElement extends Benchmarks {
         RunSkewHeapAddElements[] value();
     }
 }
-// TODO chart
-/*Running add operation on empty skew heap:
-	=> elementsCount = 100000
-		=> mean: 25.098ms	std-dev: 8.451ms
-	=> elementsCount = 1000000
-		=> mean: 381.797ms	std-dev: 82.579ms
-	=> elementsCount = 2000000
-		=> mean: 1042.539ms	std-dev: 122.15ms*/
