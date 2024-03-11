@@ -1,0 +1,44 @@
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Java
+*.class
+*.jar
+*.jfr
+
+# IntelliJ
+*.iml
+*/.idea/
+.idea/*
+out/*
+
+# LateX
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Binary documents
+*.docx
+*.doc
+*.ods
+*.xlsx
+
+# Random shit van IDEA
+.attach_*
