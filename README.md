@@ -7,7 +7,7 @@ I made this project in 2023 as part of AD2 assignment at UGent (major Informatic
 # Benchmarks
 
 Measured on: **Intel i5-1240P**<br>
-Times are measured with **pre-filled heaps**.
+Measured with **pre-filled heaps**
 
 ## Heaps
 
