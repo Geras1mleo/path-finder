@@ -77,9 +77,7 @@ public class GraphMaker {
 
                 visited.add(current);
                 // Add all neighbors to stack to add them later to sub-graph
-                List<Node> neighbors = neighborsLists.get(current) != null ?
-                        neighborsLists.get(current).stream().map(DirectedEdge::to).toList()
-                        : List.of();
+                List<Node> neighbors = neighborsLists.getOrDefault(current, new ArrayList<>()).stream().map(DirectedEdge::to).toList();
                 if (neighbors.isEmpty())
                     leaves.add(current);
                 else
