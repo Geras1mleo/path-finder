@@ -1,7 +1,7 @@
 # Algorithms and Data Structures project on different heaps and their use in the Dijkstra and A* algorithms.
 
 I made this project in 2023 as part of AD2 assignment at UGent (major Informatica).<br>
-**[Here you can see my the full report](extra/verslag.pdf) of the project with some mathematical conclusions about heaps.<br>**
+**[Here you can see my the full report](extra/verslag.pdf) of the project with some mathematical proofs and conclusions about heaps.<br>**
 
 
 # Benchmarks
